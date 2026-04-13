@@ -2,7 +2,9 @@ import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import type { Swiper as SwiperType } from "swiper";
 import { EffectCards, Autoplay } from "swiper/modules";
+// @ts-ignore
 import "swiper/css";
+// @ts-ignore
 import "swiper/css/effect-cards";
 import { useFadeInUp } from "../hooks/useGsap";
 import { PROJECTS } from "../data/profile";
