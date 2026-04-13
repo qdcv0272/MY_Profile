@@ -1,73 +1,89 @@
-# React + TypeScript + Vite
+# 김창훈 | Front-end Engineer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> 복잡한 인터랙션을 안정적인 구조로 설계하는 개발자
 
-Currently, two official plugins are available:
+[![Netlify](https://img.shields.io/badge/배포-Netlify-00C7B7?style=flat-square&logo=netlify&logoColor=white)](https://profilemys.netlify.app/)
+[![GitHub](https://img.shields.io/badge/GitHub-qdcv0272-181717?style=flat-square&logo=github)](https://github.com/qdcv0272)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🔗 배포 사이트
 
-## React Compiler
+**[https://profilemys.netlify.app/](https://profilemys.netlify.app/)**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 소개
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+안녕하세요, 프론트엔드 개발자 **김창훈**입니다.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+㈜아만타에서 **2년 9개월** 간 교육용 인터랙티브 콘텐츠를 개발했습니다.  
+TypeScript, GSAP을 활용한 드래그앤드롭·선긋기 등의 복잡한 인터랙션 모듈을 직접 설계·구현했으며,  
+AIDT(AI 디지털 교과서) 프로젝트에서는 **KWCAG 2.2 웹 접근성** 기준을 준수하며 개발했습니다.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 기술 스택
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+| 분야      | 기술                                                |
+| --------- | --------------------------------------------------- |
+| Frontend  | JavaScript, TypeScript, React, Next.js, HTML5, CSS3 |
+| Animation | GSAP, CSS Animation                                 |
+| State     | Zustand, TanStack Query                             |
+| Backend   | Firebase, Prisma, PostgreSQL                        |
+| Tools     | Git, Vite, Adobe Animate, ESLint / Prettier         |
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 프로젝트
+
+### AlgoCanvas
+
+> 알고리즘 흐름을 직관적으로 이해할 수 있도록 시각화한 프로젝트
+
+- Zustand 기반 상태 관리로 고빈도 상태 변화 효율적 제어
+- 불변 스냅샷(`buildSteps`) 구조로 알고리즘 실행 흐름 관리
+- Next.js API Routes + Prisma + PostgreSQL 백엔드 구현
+- JWT 인증 기반 북마크·메모 기능 upsert 패턴 적용
+
+`Next.js` `TypeScript` `Zustand` `Prisma` `PostgreSQL` `JWT`
+
+[GitHub](https://github.com/qdcv0272/AlgoCanvas) · [Demo](https://algocans.netlify.app/)
+
+---
+
+### Used Shopping
+
+> 실시간 데이터 흐름과 사용자 신뢰를 고려한 중고거래 서비스
+
+- Firebase 기반 인증·데이터 저장·실시간 채팅 구현
+- `onSnapshot` 활용한 실시간 데이터 동기화
+- DAL 패턴으로 Firebase 함수 집중 관리
+- `useForm<T>` 제네릭 커스텀 훅으로 재사용성 확보
+
+`React` `TypeScript` `Firebase` `TanStack Query` `Zustand`
+
+[GitHub](https://github.com/qdcv0272/Used-Shopping) · [Demo](https://used-shopping.netlify.app/)
+
+---
+
+### 평면 도형의 이동
+
+> 교육용 인터랙티브 수학 콘텐츠
+
+- Page/Step 2계층 클래스 구조로 콘텐츠 흐름 관리
+- GsapExecutor 단일 액션 큐 패턴 구현
+- `ImagePreloader(Promise.all)` 병렬 로딩 최적화
+- Half-edge Traversal로 SVG 선긋기 폴리곤 추출
+
+`TypeScript` `GSAP` `Vite` `SVG`
+
+[GitHub](https://github.com/qdcv0272/-Movement-of-plane-figures) · [Demo](https://movement-of-plane-figures.netlify.app/)
+
+---
+
+## 경력
+
+**㈜아만타 개발팀 사원** `2023.02 ~ 2025.10` (2년 9개월)
+
+- 밀크티 초등 수학 콘텐츠 개발 — TypeScript 기반 드래그앤드롭/선긋기 인터랙션 공통 모듈화
+- 중등 국어 / 초등 영어 전자저작물 구축
+- AIDT(AI 디지털 교과서) 초등 영어 개발 — KWCAG 2.2 웹 접근성 준수
