@@ -1,0 +1,36 @@
+.footer {
+  background: transparent;
+  border-top: 1px solid var(--border);
+  padding: 2rem 0;
+}
+
+.footer__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer__logo {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--accent-primary);
+  font-size: 1rem;
+}
+
+.footer__copy {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.footer__github {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  transition: color 0.2s;
+}
+
+.footer__github:hover {
+  color: var(--accent-primary);
+}

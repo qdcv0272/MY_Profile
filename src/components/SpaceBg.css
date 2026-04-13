@@ -1,0 +1,70 @@
+.space-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: #050510;
+  pointer-events: none;
+}
+
+.space-bg__canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.space-bg__nebula {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* 상단 좌: 보라 */
+.space-bg__nebula--1 {
+  width: 900px;
+  height: 900px;
+  background: radial-gradient(circle, rgba(108, 63, 255, 0.22) 0%, transparent 70%);
+  filter: blur(70px);
+  top: -300px;
+  left: -250px;
+}
+
+/* 상단 우: 파랑 */
+.space-bg__nebula--2 {
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(0, 160, 255, 0.16) 0%, transparent 70%);
+  filter: blur(65px);
+  top: 5%;
+  right: -200px;
+}
+
+/* 중간: 남색 대형 */
+.space-bg__nebula--3 {
+  width: 1000px;
+  height: 1000px;
+  background: radial-gradient(circle, rgba(60, 20, 180, 0.18) 0%, transparent 70%);
+  filter: blur(90px);
+  top: 40%;
+  left: -100px;
+}
+
+/* 중하단 우: 시안 */
+.space-bg__nebula--4 {
+  width: 650px;
+  height: 650px;
+  background: radial-gradient(circle, rgba(0, 210, 255, 0.12) 0%, transparent 70%);
+  filter: blur(65px);
+  top: 60%;
+  right: -100px;
+}
+
+/* 하단: 인디고 */
+.space-bg__nebula--5 {
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(80, 40, 200, 0.15) 0%, transparent 70%);
+  filter: blur(80px);
+  bottom: -200px;
+  left: 20%;
+}

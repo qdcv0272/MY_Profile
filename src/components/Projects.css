@@ -1,0 +1,307 @@
+/* ======================== SECTION ======================== */
+.projects {
+  background: transparent;
+}
+
+/* ======================== LAYOUT ======================== */
+.projects__layout {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* ======================== INFO (LEFT) ======================== */
+.projects__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.projects__num {
+  font-family: var(--font-mono);
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  opacity: 0.35;
+  letter-spacing: -0.05em;
+}
+
+.projects__info-title {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-top: -0.5rem;
+  transition: color 0.3s;
+}
+
+.projects__info-desc {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  max-width: 440px;
+}
+
+.projects__info-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.projects__info-details li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.projects__info-dot {
+  flex-shrink: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  margin-top: 0.5rem;
+}
+
+.projects__info-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+}
+
+.projects__info-tag {
+  background: rgba(108, 99, 255, 0.1);
+  color: var(--accent-primary);
+  border: 1px solid rgba(108, 99, 255, 0.25);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+/* GitHub button */
+.projects__github-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  align-self: flex-start;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  color: #fff;
+  padding: 0.65rem 1.4rem;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition:
+    opacity 0.2s,
+    transform 0.2s;
+}
+
+.projects__github-btn:hover {
+  opacity: 0.88;
+  transform: translateY(-2px);
+}
+
+/* Demo button */
+.projects__btn-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 0.4rem;
+}
+
+.projects__demo-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  align-self: flex-start;
+  background: transparent;
+  color: var(--accent-secondary);
+  border: 1.5px solid var(--accent-secondary);
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition:
+    background 0.2s,
+    transform 0.2s;
+}
+
+.projects__demo-btn:hover {
+  background: rgba(0, 212, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Navigation */
+.projects__nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.6rem;
+  position: relative;
+  z-index: 10;
+}
+
+.projects__nav-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition:
+    border-color 0.2s,
+    background 0.2s;
+}
+
+.projects__nav-btn:hover {
+  border-color: var(--accent-primary);
+  background: rgba(108, 99, 255, 0.12);
+}
+
+.projects__nav-count {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  min-width: 40px;
+  text-align: center;
+}
+
+/* ======================== CARDS (RIGHT) ======================== */
+.projects__cards-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  isolation: isolate;
+  position: relative;
+  z-index: 0;
+}
+
+.projects__swiper {
+  width: 340px !important;
+  height: 420px !important;
+}
+
+.projects__slide {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.project-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+/* noise texture overlay */
+.project-card__noise {
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+}
+
+.project-card__inner {
+  position: relative;
+  z-index: 1;
+  padding: 2.2rem 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.project-card__label {
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 600;
+}
+
+.project-card__name {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.project-card__short {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.7;
+}
+
+.project-card__bottom {
+  position: relative;
+  z-index: 1;
+  padding: 1rem 2rem 1.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.project-card__chip {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 0.2rem 0.65rem;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 500;
+}
+
+/* Swiper cards effect override */
+.swiper-cards .swiper-slide {
+  border-radius: 20px;
+}
+
+/* 비활성 슬라이드 포인터 이벤트 차단 - 왼쪽 버튼 클릭 방해 방지 */
+.projects__swiper .swiper-slide:not(.swiper-slide-active) {
+  pointer-events: none;
+}
+
+/* ======================== RESPONSIVE ======================== */
+@media (max-width: 900px) {
+  .projects__layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .projects__cards-wrap {
+    order: -1;
+  }
+
+  .projects__swiper {
+    width: 300px !important;
+    height: 380px !important;
+  }
+
+  .projects__info-desc {
+    max-width: 100%;
+  }
+}
