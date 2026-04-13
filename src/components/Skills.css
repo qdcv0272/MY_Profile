@@ -50,6 +50,23 @@
   box-shadow: 0 0 8px var(--accent-glow);
 }
 
+/* Level note */
+.skills__level-note {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  padding: 0.7rem 1rem;
+  border-left: 2px solid var(--accent-primary);
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 0 6px 6px 0;
+  line-height: 1.8;
+}
+
+.skills__level-note strong {
+  color: var(--accent-primary);
+  font-weight: 600;
+}
+
 /* Tools */
 .skills__tools {
   border-top: 1px solid var(--border);
