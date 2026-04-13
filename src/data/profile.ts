@@ -81,5 +81,5 @@ export const SKILLS = {
     { name: "Firebase", level: 75 },
     { name: "Prisma / PostgreSQL", level: 55 },
   ],
-  tools: ["Git", "SVN", "Vite", "Webpack", "Adobe Animate"],
+  tools: ["Git", "SVN", "Vite", "Webpack", "ESLint / Prettier", "Adobe Animate"],
 };

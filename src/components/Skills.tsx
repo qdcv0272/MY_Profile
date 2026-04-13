@@ -89,8 +89,7 @@ export default function Skills() {
         </div>
 
         <p className="skills__level-note">
-          숙련도(%)는 실무 투입 가능 수준을 기준으로 산정했습니다.
-          &nbsp;<strong>100%</strong> = 리드 가능 &nbsp;·&nbsp;
+          숙련도(%)는 실무 투입 가능 수준을 기준으로 산정했습니다. &nbsp;<strong>100%</strong> = 리드 가능 &nbsp;·&nbsp;
           <strong>80%</strong> = 단독 개발 가능 &nbsp;·&nbsp;
           <strong>65% 이하</strong> = 구조 이해 후 구현 가능
         </p>
