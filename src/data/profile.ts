@@ -49,6 +49,17 @@ export const PROJECTS = [
     gradient: "linear-gradient(135deg, #1a0a2e, #2d1b69, #4a0e8f)",
   },
   {
+    id: "quiz-playground",
+    title: "Quiz Playground",
+    description: "현재 개발 중인 인터랙티브 퀴즈 웹앱",
+    detail: ["React/TypeScript 기반으로 개발 중인 학습용 퀴즈 플랫폼", "문제 풀기, 정답 확인, 점수 계산 기능을 구현", "Netlify 배포로 실사용 흐름을 검증 중", "GitHub 저장소로 코드 버전 관리 및 지속 개선"],
+    tags: ["React", "TypeScript", "Vite", "Netlify"],
+    github: "https://github.com/qdcv0272/Quiz_Playground",
+    demo: "https://quizplayground.netlify.app/",
+    color: "#1f3b6f",
+    gradient: "linear-gradient(135deg, #102a43, #1f3b6f, #3d5a99)",
+  },
+  {
     id: "plane-figures",
     title: "평면 도형의 이동",
     description: "교육용 인터랙티브 수학 콘텐츠",
